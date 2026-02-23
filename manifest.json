@@ -2,7 +2,7 @@
 
     "manifest_version": 2,
     "name": "Pinned ProtonCalendar",
-    "version": "2.1",
+    "version": "1.0",
 
     "description": "Opens new tab with ProtonCalendar website or switches to it if it's already open.",
 
@@ -24,8 +24,16 @@
 
     "background": {
         "scripts": ["protoncalendar.js"]
-    }
-
-  }
+    },
+	
+	"browser_specific_settings": {
+		"gecko": {
+			"data_collection_permissions": {
+				"required": ["none"]
+			}
+		}
+	}
+}
+  
 
 
